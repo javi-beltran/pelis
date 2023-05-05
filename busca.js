@@ -548,7 +548,7 @@ document.addEventListener("keyup", e => {
       }
 
 
-      pasar.innerHTML = "pelicul as " + contadorDpelis;
+     // pasar.innerHTML = "pelicul as " + contadorDpelis;
 
     })
   }
