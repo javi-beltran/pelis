@@ -188,9 +188,9 @@ html {
   
   @media screen and (max-width: 1180px) {
     .master{
-      max-width: 800px;
+      max-width: 400px;
       text-align:center;
-      margin-left: 50px;
+      margin-left: 10%;
       /* paddin:10px; */
       /* border: 9px solid; */
       center
@@ -206,14 +206,14 @@ html {
       justify-items: stretch;
     }
     
-    font-size: 150%;
+    font-size: 100%;
   }
   
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 450px) {
     .master{
-      max-width: 500px;
+      max-width: 250px;
       text-align:center;
-      margin-left: 2%;
+      margin-left: 5%;
       /* paddin:10px; */
       /* border: 9px solid; */
       center
@@ -230,7 +230,7 @@ html {
       justify-items: stretch;
     }
 
-    font-size: 45%;
+    font-size: 40%;
 
     .respo {
       min-width: 209px;
