@@ -1,0 +1,243 @@
+.gidP {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: minmax(auto, 365px);
+  grid-template-rows: auto;
+  gap: 5px;
+  justify-items: stretch;
+}
+
+
+
+
+
+
+
+.B_pelis {
+  border: 5px solid rgb(235, 19, 19);
+  /*background-color: antiquewhite;*/
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+
+}
+
+.B_pelis2 {
+  border: 5px solid rgb(94, 252, 3);
+  /*background-color: antiquewhite;*/
+  background-color: rgb(40, 69, 94);
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+
+}
+
+.card1 {
+  padding: 0%;
+  margin: 0%;
+  ;
+}
+
+p {
+  height: 40px;
+  text-align: center;
+}
+
+.botngrande {
+  width: 100%;
+
+}
+
+.sub {
+  background-color: rgb(139, 57, 105);
+  color: rgb(95, 42, 42);
+}
+
+body {
+  background-color: rgb(97, 194, 121);
+
+}
+
+.filtro {
+  /*display: none;*/
+  visibility: hidden;
+  order: 1;
+}
+
+.parrafo-azul {
+  background-color: rgb(42, 185, 97);
+  color: rgb(189, 209, 185);
+}
+.float-agrupadorTODO {
+  border: 3px solid #fff;
+  padding: 20px;
+  width: auto;
+}
+.float-agrupador{
+  width: 50%;
+  float: left;
+ /* padding: 20px;*/
+  border: 2px solid red; 
+}
+.float-agrupador1{
+ width: 50%;
+  float: right;
+/*  padding: 20px;*/
+  border: 2px solid red; 
+}
+
+
+html {
+  
+  @media screen {}
+  @media screen and (max-width: 4500px) {
+    .master{
+      max-width: 2000px;
+      text-align:center;
+      margin-left: 10%;
+      /* paddin:10px; */
+      /* border: 9px solid; */
+      center
+    }
+    .gidP {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: minmax(auto, 365px);
+      grid-template-rows: auto;
+      gap: 5px;
+      justify-items: stretch;
+    }
+
+    font-size: 150%;
+  }
+  @media screen and (max-width: 2500px) {
+    .master{
+      max-width: 2000px;
+      text-align:center;
+      margin-left: 10%;
+      /* paddin:10px; */
+      /* border: 9px solid; */
+      center
+    }
+    .gidP {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: minmax(auto, 365px);
+      grid-template-rows: auto;
+      gap: 5px;
+      justify-items: stretch;
+    }
+
+    font-size: 150%;
+  }
+
+  @media screen and (max-width: 2000px) {
+    .master{
+      max-width: 1500px;
+      text-align:center;
+      margin-left:  10%;
+      /* paddin:10px; */
+      /* border: 9px solid; */
+      center
+    }
+    .gidP {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: minmax(auto, 365px);
+      grid-template-rows: auto;
+      gap: 5px;
+      justify-items: stretch;
+    }
+
+    font-size: 150%;
+    
+    img {
+      width: 209px;
+      
+      height: 220px;
+    }
+    }
+
+
+  @media screen and (max-width: 1400px) {
+    .master{
+      max-width: 1000px;
+      text-align:center;
+      center
+      /* paddin:10px; */
+      /* border: 9px solid; */
+    }
+    .gidP {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: minmax(auto, 65px);
+      grid-template-rows: auto;
+      gap: 5px;
+      justify-items: stretch;
+    }
+    
+    font-size: 150%;
+    
+    
+    .respo {
+      min-width: 209px;
+      min-height 220px;
+      max-width: 209px;
+      max-height 220px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1180px) {
+    .master{
+      max-width: 400px;
+      text-align:center;
+      margin-left: 10%;
+      /* paddin:10px; */
+      /* border: 9px solid; */
+      center
+    }
+    .gidP {
+      /*max-width: 500px;*/
+      
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: minmax(auto, 365px);
+      grid-template-rows: auto;
+      gap: 5px;
+      justify-items: stretch;
+    }
+    
+    font-size: 100%;
+  }
+  
+  @media screen and (max-width: 450px) {
+    .master{
+      max-width: 250px;
+      text-align:center;
+      margin-left: 5%;
+      /* paddin:10px; */
+      /* border: 9px solid; */
+      center
+      
+    }
+    
+    .gidP {
+      
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: minmax(auto, 365px);
+      grid-template-rows: auto;
+      gap: 5px;
+      justify-items: stretch;
+    }
+
+    font-size: 40%;
+
+    .respo {
+      min-width: 209px;
+      min-height 220px;
+      max-width: 209px;
+      max-height 220px;
+    }
+  }
+
+}
