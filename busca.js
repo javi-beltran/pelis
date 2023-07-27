@@ -13,6 +13,7 @@ random = Math.floor(Math.random() * (auxmax - auxmin + 1) + auxmin);
 let PEPE = "";
 let B_pelis = "";
 let contadorDpelis = "";
+
 switch (random) {
   case 1:
     B_pelis = document.getElementsByTagName("div");
@@ -436,56 +437,56 @@ switch (random) {
   document.body.style.backgroundColor = "rgb(243, 249, 249)";
   
     break;
-  case 18:
+  // case 18:
     
-  B_pelis = document.getElementsByTagName("div");
-  p = document.getElementsByTagName("p");
-  sub = document.getElementsByClassName("sub");
-  botngrande = document.getElementsByClassName("botngrande");
+  // B_pelis = document.getElementsByTagName("div");
+  // p = document.getElementsByTagName("p");
+  // sub = document.getElementsByClassName("sub");
+  // botngrande = document.getElementsByClassName("botngrande");
 
-  for (var i = 0; i < B_pelis.length; i++) {
-    B_pelis[i].style.borderColor = "rgb(151, 34, 104)";
+  // for (var i = 0; i < B_pelis.length; i++) {
+  //   B_pelis[i].style.borderColor = "rgb(151, 34, 104)";
 
-  }
-  for (var i = 0; i < p.length; i++) {
-    p[i].style.color = "black";
-  }
+  // }
+  // for (var i = 0; i < p.length; i++) {
+  //   p[i].style.color = "black";
+  // }
 
-  for (var i = 0; i < sub.length; i++) {
-    sub[i].style.backgroundColor = "rgb(251, 241, 242) "
-  }
+  // for (var i = 0; i < sub.length; i++) {
+  //   sub[i].style.backgroundColor = "rgb(251, 241, 242) "
+  // }
 
-  for (var i = 0; i < botngrande.length; i++) {
-    contadorDpelis++;
-  }
-  document.body.style.backgroundColor = "rgb(246, 248, 245)";
+  // for (var i = 0; i < botngrande.length; i++) {
+  //   contadorDpelis++;
+  // }
+  // document.body.style.backgroundColor = "rgb(246, 248, 245)";
   
-    break;
-  case 19:
+  //   break;
+  // case 19:
     
-  B_pelis = document.getElementsByTagName("div");
-  p = document.getElementsByTagName("p");
-  sub = document.getElementsByClassName("sub");
-  botngrande = document.getElementsByClassName("botngrande");
+  // B_pelis = document.getElementsByTagName("div");
+  // p = document.getElementsByTagName("p");
+  // sub = document.getElementsByClassName("sub");
+  // botngrande = document.getElementsByClassName("botngrande");
 
-  for (var i = 0; i < B_pelis.length; i++) {
-    B_pelis[i].style.borderColor = "rgb(89, 74, 107)";
+  // for (var i = 0; i < B_pelis.length; i++) {
+  //   B_pelis[i].style.borderColor = "rgb(89, 74, 107)";
 
-  }
-  for (var i = 0; i < p.length; i++) {
-    p[i].style.color = "black";
-  }
+  // }
+  // for (var i = 0; i < p.length; i++) {
+  //   p[i].style.color = "black";
+  // }
 
-  for (var i = 0; i < sub.length; i++) {
-    sub[i].style.backgroundColor = "rgb(250, 218, 233) "
-  }
+  // for (var i = 0; i < sub.length; i++) {
+  //   sub[i].style.backgroundColor = "rgb(250, 218, 233) "
+  // }
 
-  for (var i = 0; i < botngrande.length; i++) {
-    contadorDpelis++;
-  }
-  document.body.style.backgroundColor = "rgb(245, 244, 250)";
+  // for (var i = 0; i < botngrande.length; i++) {
+  //   contadorDpelis++;
+  // }
+  // document.body.style.backgroundColor = "rgb(245, 244, 250)";
   
-    break;
+  //   break;
   case 20:
     
   B_pelis = document.getElementsByTagName("div");
@@ -519,7 +520,7 @@ switch (random) {
 
 let miParrafo = document.getElementById("elParrafo");
 
-
+elParrafo.innerHTML = random;
 
 
 
