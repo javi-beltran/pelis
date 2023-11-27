@@ -220,7 +220,7 @@ font-size: 0%
   .master{
     max-width: 400px;
     text-align:center;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     /* paddin:10px; */
     /* border: 9px solid; */
     
@@ -234,6 +234,7 @@ font-size: 0%
     grid-template-rows: auto;
     gap: 5px;
     justify-items: stretch;
+
   }
   
   /* font-size: 100%; */
@@ -243,7 +244,7 @@ font-size: 0%
   .master{
     max-width: 250px;
     text-align:center;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     /* paddin:10px; */
     /* border: 9px solid; */ 
   }
