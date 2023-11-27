@@ -1,3 +1,8 @@
+.btn-secondary2{
+  border-radius: 5%;
+  width: 110%;
+}
+
 .gidP {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -85,159 +90,180 @@ body {
 }
 
 
-html {
-  
-  @media screen {}
-  @media screen and (max-width: 4500px) {
-    .master{
-      max-width: 2000px;
-      text-align:center;
-      margin-left: 10%;
-      /* paddin:10px; */
-      /* border: 9px solid; */
-      center
-    }
-    .gidP {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: minmax(auto, 365px);
-      grid-template-rows: auto;
-      gap: 5px;
-      justify-items: stretch;
-    }
 
-    font-size: 150%;
+
+/*  ////////////////////////////////////// PRUEBA/////////////////////////////// */
+ /* @media screen and (max-width: 600px) {
+  .master{
+font-family: 'Times New Roman', Times, serif;
+font-size: 0%
+  };
+} */
+
+/* 
+
+@media screen and (max-width: 700px) {
+  .master{
+    max-width: 200px;
+    text-align:center;
+    margin-left: 10%;
+    /* paddin:10px; */
+    /* border: 9px solid; 
+
   }
-  @media screen and (max-width: 2500px) {
-    .master{
-      max-width: 2000px;
-      text-align:center;
-      margin-left: 10%;
-      /* paddin:10px; */
-      /* border: 9px solid; */
-      center
-    }
-    .gidP {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: minmax(auto, 365px);
-      grid-template-rows: auto;
-      gap: 5px;
-      justify-items: stretch;
-    }
-
-    font-size: 150%;
-  }
-
-  @media screen and (max-width: 2000px) {
-    .master{
-      max-width: 1500px;
-      text-align:center;
-      margin-left:  10%;
-      /* paddin:10px; */
-      /* border: 9px solid; */
-      center
-    }
-    .gidP {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: minmax(auto, 365px);
-      grid-template-rows: auto;
-      gap: 5px;
-      justify-items: stretch;
-    }
-
-    font-size: 150%;
-    
-    img {
-      width: 209px;
       
-      height: 220px;
-    }
-    }
+
+  .gidP {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: minmax(auto, 365px);
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: stretch;
+  }
+ 
+} */
 
 
-  @media screen and (max-width: 1400px) {
-    .master{
-      max-width: 1000px;
-      text-align:center;
-      center
-      /* paddin:10px; */
-      /* border: 9px solid; */
-    }
-    .gidP {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: minmax(auto, 65px);
-      grid-template-rows: auto;
-      gap: 5px;
-      justify-items: stretch;
-    }
-    
-    font-size: 150%;
-    
-    
-    .respo {
-      min-width: 209px;
-      min-height 220px;
-      max-width: 209px;
-      max-height 220px;
-    }
+
+@media screen and (max-width: 2500px) {
+  .master{
+    max-width: 2000px;
+    text-align:center;
+    margin-left: 10%;
+    /* paddin:10px; */
+    /* border: 9px solid; */
     
   }
-  
-  @media screen and (max-width: 1180px) {
-    .master{
-      max-width: 400px;
-      text-align:center;
-      margin-left: 10%;
-      /* paddin:10px; */
-      /* border: 9px solid; */
-      center
-    }
-    .gidP {
-      /*max-width: 500px;*/
-      
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: minmax(auto, 365px);
-      grid-template-rows: auto;
-      gap: 5px;
-      justify-items: stretch;
-    }
+  .gidP {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: minmax(auto, 365px);
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: stretch;
+  }
+
+  /* font-size: 150%; */
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 2000px) {
+  .master{
+    max-width: 1500px;
+    text-align:center;
+    margin-left:  10%;
+    /* paddin:10px; */
+    /* border: 9px solid; */
     
-    font-size: 100%;
+  }
+  .gidP {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(auto, 365px);
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: stretch;
+  }
+
+  /* font-size: 150%; */
+  
+  img {
+    width: 209px;
+    
+    height: 220px;
+  }
+  }
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+  .master{
+    max-width: 1000px;
+    text-align:center;
+    
+    /* paddin:10px; */
+    /* border: 9px solid; */
+  }
+  .gidP {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(auto, 65px);
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: stretch;
   }
   
-  @media screen and (max-width: 450px) {
-    .master{
-      max-width: 250px;
-      text-align:center;
-      margin-left: 5%;
-      /* paddin:10px; */
-      /* border: 9px solid; */
-      center
-      
-    }
+  /* font-size: 150%; */
+  
+  
+  /* .respo {
+    min-width: 209px;
+    min-height 220px;
+    max-width: 209px;
+    max-height 220px;
+  } */
+  
+}
+
+
+@media screen and (max-width: 1180px) {
+  .master{
+    max-width: 400px;
+    text-align:center;
+    margin-left: 10%;
+    /* paddin:10px; */
+    /* border: 9px solid; */
     
-    .gidP {
-      
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: minmax(auto, 365px);
-      grid-template-rows: auto;
-      gap: 5px;
-      justify-items: stretch;
-    }
+  }
+  .gidP {
+    /*max-width: 500px;*/
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(auto, 365px);
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: stretch;
+  }
+  
+  /* font-size: 100%; */
+}
 
-    font-size: 40%;
-
-    .respo {
-      min-width: 209px;
-      min-height 220px;
-      max-width: 209px;
-      max-height 220px;
-    }
+@media screen and (max-width: 450px) {
+  .master{
+    max-width: 250px;
+    text-align:center;
+    margin-left: 5%;
+    /* paddin:10px; */
+    /* border: 9px solid; */ 
+  }
+  
+  .gidP {
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: minmax(auto, 365px);
+    grid-template-rows: auto;
+    gap: 5px;
+    justify-items: stretch;
   }
 
+  /* font-size: 40%; */
+
+  /* .respo {
+    min-width: 209px;
+    min-height 220px;
+    max-width: 209px;
+    max-height 220px;
+  } */
 }
