@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.98.0">
+  <title>NEW Pelis Javi S.R.R.A.</title>
+
+<!-- ............................FONTS google......................................... -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+<!-- ............................FONTS google......................................... -->
+  <!--<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">-->
+  <!--<link rel="stylesheet" href="style.css">-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo1.css">
+  <style>
+    /* .gidP {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows: minmax(auto, 365px);
+      grid-template-rows: auto;
+      gap: 5px;
+      justify-items: stretch;
+    } */
+
+    .B_pelis {
+      border: 5px solid blueviolet;
+      /*background-color: antiquewhite;*/
+      padding-bottom: 0%;
+      margin-bottom: 0%;
+      border-radius: 4%;
+      padding-bottom: 10px;
+
+    }
+
+    .card1 {
+      padding: 0%;
+      margin: 0%;
+    }
+
+    p {
+      /* height: 40px; */
+      text-align: center;
+      font-size: 150%;
+      font-style: bold;
+    }
+
+
+
+    .sub {
+      background-color: white;
+      color: black;
+      border-radius: 2%;
+    }
+
+    body {
+
+      background-color: rgb(45, 141, 173);
+
+    }
+
+    .botngrande {
+      max-width: 100%;
+      height: 50px;
+      margin-top: 5%;
+      color: black;
+
+
+    }
+
+    .filtro {
+      display: none;
+      visibility: hidden;
+      order: 1;
+    }
+
+    /* .card-text {
+      display: none;
+      visibility: hidden;
+      order: 1;
+    }  */
+  </style>
+
+
+
+
+  <!-- style=" width: 100%; background-color: black;" -->
+
+  <nav class="navbar bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">Pelis Javi S.R.R.A</a>
+      <p style="text-align: center;">"LAS PELICULAS CON FONDO -><label
+        class="sub" style="border: 2px solid black;">&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      <- ESTAN SUBTITULADAS" </p>
+      <p id="elParrafo" hidden> numero de css </p>
+      <form class="d-flex" role="search">
+        <input id="id_buscador" class="form-control me-2" type="search" placeholder="Buscar película"
+        aria-label="Search">
+      </form>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button id="btnGenero" onclick="ocultar()">Genero</button>
+
+    </div>
+   
+    <div id="Ogenero" style="padding-left: 10%;padding-right: 10%;display: none;">
+
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        name="num" value="Acción" onclick='genero("Acción")'>Acción</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        name="num" value="Animación" onclick='genero("Animación")'>Animación</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Aventura" onclick='genero("Aventura")'>Aventura</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Bélico" onclick='genero("Bélico")'>Bélico</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Histórica" onclick='genero("Histórica")'>Histórica</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Ciencia ficción" onclick='genero("Ciencia ficción")'>Ciencia ficción</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Comedia" onclick='genero("Comedia")'>Comedia</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Crimen" onclick='genero("Crimen")'>Crimen</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Deportes" onclick='genero("Deportes")'>Deportes</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Documental" onclick='genero("Documental")'>Documental</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Drama" onclick='genero("Drama")'>Drama</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Fantasía" onclick='genero("Fantasía")'>Fantasía</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Ficción" onclick='genero("Ficción")'>Ficción</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Histórica" onclick='genero("Histórica")'>Histórica</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Infantil" onclick='genero("Infantil")'>Infantil</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Musical" onclick='genero("Musical")'>Musical</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Neo-noir" onclick='genero("Neo-noir")'>Neo-noir</button>
+      <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+        id="generoB" value="Romance" onclick='genero("Romance")'>Romance</button>
+      <div style="text-align: center;">
+        <button type="button" class="btn btn-secondary"
+          style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;" id="generoB" value="Romance"
+          onclick='genero("TRADUCIDA")'>TRADUCIDA</button>
+        <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+          id="generoB" value="Terror" onclick='genero("Terror")'>Terror</button>
+        <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+          id="generoB" value="Thriller" onclick='genero("Thriller")'>Thriller</button>
+        <button type="button" class="btn btn-success" style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;"
+          id="generoB" value="Wéstern" onclick='genero("Wéstern")'>Wéstern</button>
+        <button type="button" class="btn btn-secondary"
+          style="margin-bottom: 0.5%;border-radius: 55%; min-width: 15%;" id="generoB" value="Romance"
+          onclick='genero("SUBTITULADA")'>SUBTITULADAS</button>
+      </div>
+    </div>
+  </nav>
+  <br>
+</div>
+</head>
+
+<body style="background-color:black ;color: white;" >
+  <div style="margin: auto;">
+    <h1 id="tiempo"  style="text-align: center;color:white; font-family:Monofett"></h1>
+    <h1 id="dia"    style="text-align: center;color:white; font-family:Monofett"> 00000 </h1>
+  </div>
+  <p></p>
+
+<!-- -----------------------currusel----------------------------------------- -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="DUNE2.png" class="d-block w-100" alt="...">
+      <div style="padding-top: 5%; text-align: center;">
+        <h5>Dune parte 2</h5>
+        <p>15 de Marzo 2024.</p>
+    </div>
+    </div> 
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="godzillaXkong.png" class="d-block w-100" alt="...">
+      <div style="padding-top: 5%; text-align: center;">
+        <h5>GODZILLA x KONG: El nuevo imperio</h5>
+        <p>15 de Marzo 2024.</p>
+    </div>
+  
+    <!-- <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div> -->
+  </div>
+  <div class="carousel-item" data-bs-interval="3000">
+    <img src="d3.png" class="d-block w-100" alt="...">
+    <div style="padding-top: 5%; text-align: center;">
+      <h5>Deadpool 3</h5>
+      <p>26 de Julio 2024.</p>
+  </div>
+  </div>
+  
+  <div class="carousel-item" data-bs-interval="3000">
+    <img src="f3.png" class="d-block w-100" alt="...">
+    <div style="padding-top: 5%; text-align: center;">
+      <h5>Furiosa: de la saga Mad Max </h5>
+      <p>23 de mayo de 2024.</p>
+  </div>
+</div>
+
+<div class="carousel-item" data-bs-interval="3000">
+  <img src="K3.png" class="d-block w-100" alt="...">
+  <div style="padding-top: 5%; text-align: center;">
+    <h5>El Planeta de los Simios: Nuevo Reino</h5>
+    <p>9 de mayo de 2024.</p>
+</div>
+</div>
+
+<div class="carousel-item" data-bs-interval="3000">
+  <img src="BB4.png" class="d-block w-100" alt="...">
+  <div style="padding-top: 5%; text-align: center;">
+    <h5>Bad Boys 4</h5>
+    <p>13 de Junio de 2024.</p>
+</div>
+</div>
+
+<div class="carousel-item" data-bs-interval="3000">
+  <img src="I2.png" class="d-block w-100" alt="...">
+  <div style="padding-top: 5%; text-align: center;">
+    <h5>Intensamente 2</h5>
+    <p>a partir de junio del 2024.</p>
+</div>
+</div>
+
+<div class="carousel-item" data-bs-interval="3000">
+  <img src="MI8.png" class="d-block w-100" alt="...">
+  <div style="padding-top: 5%; text-align: center;">
+    <h5>Misión: Imposible Sentencia Mortal-Parte 2</h5>
+    <p>23 de mayo de 2025.</p>
+</div>
+</div>
+
+  <!-- ---------------------------------------------------- -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- -----------------------currusel----------------------------------------- -->
+  <main>
+
+
+<!-- ------------------------------------------------------------------------ -->
+
+    <!-- ------------------------------------------------------------------------ -->
+    <input type="search" id="resultado" placeholder="AAAA" style="opacity: 0%;">
+    <p hidden id="resultado2"></p>
+
+
+
+
+
+
+        <!-- <div style="border:9% solid; border-color:tomato;">
+
+          <Div style="float: left; width:75% ;">
+             <br>
+            <br>
+            <br>
+            <br>
+
+            <input style=" align-items:center; text-align: center; width: 100%;height: 80px;font-size: 290%;"
+              type=" search" name="buscador" id="id_buscador" placeholder="BUSCAR PELICULA">
+          </Div>
+
+          <Div style="float: right; width: 15%;">
+            <img src="profe.png" width="100%">
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br> 
+          <h1>
+            <p style="text-align: center;">"LAS PELICULAS CON FONDO -><label
+                class="sub" style="border: 2px solid black;">&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <- ESTAN SUBTITULADAS" </p>
+              <p id="elParrafo" hidden> numero de css </p>
+             
+            </h1>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> -->
+
+
+        <!-- <p></p> -->
+        <!-- <p style="color: red;" id="prueba"></p> -->
+        <div class="B_pelis" class="col">
+            <div class="card1">
+                <center><img src="Labyrinth_1986.jpg" width="209" height="262" class="respo"></center>
+                <div class="card-body">
+                    <p id="id_pelis" class="card-text">Labyrinth 1986</p><!-- com-->
+                    <p class="genero" hidden>Fantasía/Musical/TRADUCIDA</p>
+                    <div class="">
+                        <div class="">
+                    <a href="https://drive.google.com/file/d/15770fC0s33Gh_Eos0bKaH7AnNQ7P0yrz/view?usp=sharing">
+                      <button id="boton" type="button" class="botngrande"
+                        class="btn btn-sm btn-outline-secondary">Ver</button>
+                    </a>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+
+          
+          <div class="gidP" >
+  
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------ -->
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+          <div class="col-md-4">
+            <img src="1.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ------------------------------------------------------------------------ -->
+  
+      <div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <img src="1.jpg" class="img-fluid rounded-end" alt="...">
+      </div>
+        </div>
+      </div>
+      
+      <!-- ------------------------------------------------------------------------ -->
+      
+  
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="col-md-4" >
+            <img src="1.jpg" class="img-fluid rounded-end" alt="...">
+          </div>
+            </div>
+          </div>
+          
+      
+      <!-- ------------------------------------------------------------------------ -->
+      
+  
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="col-md-4" >
+            <img src="1.jpg" class="img-fluid rounded-end" alt="...">
+          </div>
+          <!-- <button onclick="document.getElementById('miIframe').src="www.google.com""><img src="https://w7.pngwing.com/pngs/17/736/png-transparent-computer-icons-imdb-imdb-television-text-photography-thumbnail.png" style="width: 20%;height: 20%;"></button> -->
+          <p>
+           
+        </div>
+          </div>
+          
+      
+      <!-- ------------------------------------------------------------------------ -->
+      <!-- ------------------------------------------------------------------------ -->
+      <!-- ------------------------------------------------------------------------ -->
+    </div>
+      <!-- ------------------------------------------------------------------------ -->
+         
+
+          
+
+
+          <!-- ///////////////////////////////////////////////////////////////////   -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+  </main>
+  <!-- <script src="estilos.js"></script> -->
+  <script src="busca.js"></script>   
+  <script src="reloj.js"></script>   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<footer style=" height: 30vh;">
+<iframe  id="miIframe" src="https://reloj-alarma.es/hora/buenos-aires-argentina/#pnl-main" style="width: 100%;height: 100%;"autofocus></iframe>
+<!-- <iframe  id="miIframe" src="" style="width: 100%;"></iframe> -->
+</footer>
+</html>
