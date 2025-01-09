@@ -1,0 +1,69 @@
+body{
+    height: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content:center;
+    font-family: 'Courier New', Courier, monospace;
+    background: yellow;
+    
+}
+
+.weapper,
+.single-card{
+    height: 450px;
+    max-width: 300px;
+    margin: auto;
+    position: relative;
+}
+
+.weapper{
+
+    perspective: none;
+    /* perspective: 900px; */
+    
+}
+.icon{
+    max-width: 50px;
+    max-height: 50px;
+}
+.iconi{
+    font-size:32px;
+    color: rgb(71, 26, 205);
+}
+.single-card{
+    text-align: center;
+    /* transform: all 1.5s cubic-bezier(0.7,-5); */
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.wrapper:hover .single-card{
+    transform: rotateY(180deg);
+}
+
+.front,
+.back{
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    
+}
+
+.front{
+    cursor: pointer;
+    height: 100%;
+    background-image: url(Robot.jpg);
+    backface-visibility: hidden;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.back{
+    transform: rotateY(180deg);
+    position: absolute;
+    border-radius: 50px;
+    height: 450px;
+    background: #ffff;
+}
