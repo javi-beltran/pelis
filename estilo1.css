@@ -78,7 +78,7 @@ body {
 }
 .float-agrupador{
   width: 50%;
-  float: left;
+  /* float: left; */
  /* padding: 20px;*/
   border: 2px solid red; 
 }
@@ -130,15 +130,22 @@ font-size: 0%
   .master{
     max-width: 2000px;
     text-align:center;
-    margin-left: 10%;
+    /* margin-right: 10%; */
+    margin: auto;
+    /* padding-top: 0%; */
     /* paddin:10px; */
     /* border: 9px solid; */
+    padding-right: 10%;
+    /*div{
+      
+      class="container text-center"
+    }*/
     
   }
   .gidP {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: minmax(auto, 365px);
+    /* grid-template-rows: minmax(auto, 365px); */
     grid-template-rows: auto;
     gap: 5px;
     justify-items: stretch;
@@ -186,7 +193,7 @@ font-size: 0%
 
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1768px) {
   .master{
     max-width: 1000px;
     text-align:center;
@@ -196,7 +203,7 @@ font-size: 0%
   }
   .gidP {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(auto, 65px);
     grid-template-rows: auto;
     gap: 5px;
@@ -216,24 +223,27 @@ font-size: 0%
 }
 
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 768px) {
   .master{
-    max-width: 400px;
+    max-width: auto;
+    /* max-width: 400px; */
     text-align:center;
     /* margin-left: 10%; */
     /* paddin:10px; */
     /* border: 9px solid; */
-    
+    margin: auto;
   }
   .gidP {
     /*max-width: 500px;*/
     
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: minmax(auto, 365px);
     grid-template-rows: auto;
     gap: 5px;
     justify-items: stretch;
+
+
 
   }
   
@@ -242,11 +252,19 @@ font-size: 0%
 
 @media screen and (max-width: 450px) {
   .master{
-    max-width: 250px;
+    max-width: 450px;
     text-align:center;
+
+    margin: auto;
     /* margin-right: 5%; */
     /* paddin:10px; */
     /* border: 9px solid; */ 
+        p {
+      /* height: 40px; */
+      text-align: center;
+      font-size: 100%;
+      font-style: bold;
+    }
   }
   
   .gidP {
@@ -258,6 +276,7 @@ font-size: 0%
     gap: 5px;
     justify-items: stretch;
   }
+
 
   /* font-size: 40%; */
 
