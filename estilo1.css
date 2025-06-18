@@ -56,9 +56,13 @@ p {
   color: rgb(95, 42, 42);
 }
 
-body {
-  background-color: rgb(97, 194, 121);
-
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(97, 194, 121); */
+  /* margin: auto; */
+  padding: auto;
 }
 
 .filtro {
@@ -125,26 +129,53 @@ font-size: 0%
 } */
 
 
-
-@media screen and (max-width: 2500px) {
-  .master{
-    max-width: 2000px;
-    text-align:center;
-    /* margin-right: 10%; */
-    margin: auto;
-    /* padding-top: 0%; */
-    /* paddin:10px; */
-    /* border: 9px solid; */
-    padding-right: 10%;
-    /*div{
+/* extra large */
+@media screen and (max-width: 1291px) {
+    
+html, body {
+  width: 100%;
+  /* margin: 0; */
+  margin-left: 0%;
+  margin-right: 3%;
+  padding: 0%;
+  align-items: center;
+  align-content: center;
+  /* background-color: blue !important; */
+  color:blueviolet;
+      text-align: center;
+  
+    }
+    .master{
       
+      width: 100%;
+      max-width: none;
+      text-align:center;
+      /* margin-right: 10%; */
+      margin: auto;
+      /* padding-top: 0%; */
+      /* paddin:10px; */
+      /* border: 9px solid; */
+      padding-right: 20%;
+      
+      /*div{
+        
       class="container text-center"
     }*/
     
   }
+  input{
+    margin-left: 15%;
+  }
+  h1{
+    margin-left: 35%;
+    text-align: center;
+    font-size: 150%;
+  }
+
+
   .gidP {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* grid-template-rows: minmax(auto, 365px); */
     grid-template-rows: auto;
     gap: 5px;
@@ -160,22 +191,38 @@ font-size: 0%
 
 
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 992px) {
+   html, body {
+  width: 100%;
+  /* margin: 0; */
+  margin-left: 0%;
+  margin-right: 9%;
+  padding: 0%;
+  align-items: center;
+  align-content: center;
+  /* background-color: blue !important; */
+  color:blueviolet;
+      text-align: center;
+  
+    }
   .master{
-    max-width: 1500px;
+    max-width: 992px;
     text-align:center;
-    margin-left:  10%;
+    /* padding-right:10%; */
+    padding-left:0%;
+    /* margin-left:  10%; */
     /* paddin:10px; */
     /* border: 9px solid; */
     
   }
   .gidP {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(auto, 365px);
     grid-template-rows: auto;
     gap: 5px;
     justify-items: stretch;
+    margin-right:auto;
   }
 
   /* font-size: 150%; */
@@ -193,11 +240,13 @@ font-size: 0%
 
 
 
-@media screen and (max-width: 1768px) {
+@media screen and (max-width: 768px) {
   .master{
-    max-width: 1000px;
+    /* max-width: 1000px; */
     text-align:center;
-    
+    margin: auto;
+    max-width: auto;
+
     /* paddin:10px; */
     /* border: 9px solid; */
   }
@@ -223,15 +272,29 @@ font-size: 0%
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
+  html, body {
+  width: 100%;
+  /* margin: 0; */
+  margin-left: 0%;
+  margin-right: 3%;
+  padding: 0%;
+  align-items: center;
+  align-content: center;
+  /* background-color: blue !important; */
+  color:blueviolet;
+      text-align: center;
+  
+    }
   .master{
     max-width: auto;
     /* max-width: 400px; */
     text-align:center;
     /* margin-left: 10%; */
     /* paddin:10px; */
-    /* border: 9px solid; */
     margin: auto;
+    padding-left: 10%;
+    /* border: 9px solid; */
   }
   .gidP {
     /*max-width: 500px;*/
@@ -246,21 +309,31 @@ font-size: 0%
 
 
   }
-  
-  /* font-size: 100%; */
+h1{
+  /* padding-top: 70%; */
+  padding-bottom: 0%;
+
+  font-size: 50%;
 }
 
-@media screen and (max-width: 450px) {
+
+}
+
+
+
+
+
+/* @media screen and (max-width: 450px) {
   .master{
     max-width: 450px;
     text-align:center;
 
     margin: auto;
-    /* margin-right: 5%; */
-    /* paddin:10px; */
-    /* border: 9px solid; */ 
-        p {
-      /* height: 40px; */
+                  /* margin-right: 5%; */
+                  /* paddin:10px; */
+                  /* border: 9px solid; */ 
+                      p {
+                   /* height: 40px; 
       text-align: center;
       font-size: 100%;
       font-style: bold;
@@ -278,12 +351,12 @@ font-size: 0%
   }
 
 
-  /* font-size: 40%; */
+                          font-size: 40%;
 
-  /* .respo {
-    min-width: 209px;
-    min-height 220px;
-    max-width: 209px;
-    max-height 220px;
-  } */
-}
+                          /* .respo {
+                            min-width: 209px;
+                            min-height 220px;
+                            max-width: 209px;
+                            max-height 220px;
+                          } 
+} */
