@@ -130,7 +130,7 @@ font-size: 0%
 
 
 /* extra large */
-@media screen and (max-width: 1291px) {
+@media screen and (max-width: 21291px) {
     
 html, body {
   width: 100%;
@@ -149,19 +149,25 @@ html, body {
       
       width: 100%;
       max-width: none;
+      /* margin: auto; */
       text-align:center;
       /* margin-right: 10%; */
-      margin: auto;
       /* padding-top: 0%; */
       /* paddin:10px; */
       /* border: 9px solid; */
       padding-right: 20%;
+      /* padding-left: 12%; */
+      margin-left: 0%;
       
       /*div{
         
       class="container text-center"
     }*/
     
+  }
+  container-text-center{
+    /* padding-left: 5%;
+      margin-left: 0%; */
   }
   input{
     margin-left: 15%;
@@ -175,7 +181,7 @@ html, body {
 
   .gidP {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     /* grid-template-rows: minmax(auto, 365px); */
     grid-template-rows: auto;
     gap: 5px;
